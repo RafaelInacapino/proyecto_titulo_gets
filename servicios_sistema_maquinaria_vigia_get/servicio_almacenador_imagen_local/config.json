@@ -1,0 +1,7 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5005,
+  "storage_url": "http://127.0.0.1:8000/api/storage/upload-image/",
+  "django_reportes_url": "http://127.0.0.1:8000/api/reportes/crear/",
+  "django_incidentes_url": "http://127.0.0.1:8000/api/incidentes/crear/"
+}

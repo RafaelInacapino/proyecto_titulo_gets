@@ -1,0 +1,29 @@
+.camera-frame-512,
+.snapshot-frame-512 {
+    width: 100%;
+    max-width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-frame-512 {
+    background: #000;
+    cursor: pointer;
+}
+
+.snapshot-frame-512 {
+    background: #111;
+    border: 1px solid #333;
+}
+
+.camera-frame-512 img,
+.snapshot-frame-512 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

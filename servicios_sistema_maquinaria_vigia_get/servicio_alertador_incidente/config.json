@@ -1,0 +1,6 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5007,
+  "arduino_port": "COM3",
+  "arduino_baudrate": 9600
+}

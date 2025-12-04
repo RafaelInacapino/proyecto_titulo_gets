@@ -1,0 +1,9 @@
+Flask==3.0.3
+flask-cors==4.0.0
+opencv-python==4.9.0.80
+numpy==1.26.4
+inference-sdk==0.62.2
+django==4.2.16
+pymongo==4.6.3
+pyserial==3.5
+requests==2.32.3

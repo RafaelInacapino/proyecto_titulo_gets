@@ -1,0 +1,7 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5006,
+  "storage_url": "",
+  "nube_url": "",
+  "nube_api_key": ""
+}

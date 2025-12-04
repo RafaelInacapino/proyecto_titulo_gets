@@ -1,0 +1,21 @@
+.card {
+    border-radius: var(--radius-base);
+    background-color: var(--color-dark-light);
+    color: var(--color-light);
+    border: none;
+    box-shadow: var(--shadow-elevated);
+    transition: var(--transition-fast);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}

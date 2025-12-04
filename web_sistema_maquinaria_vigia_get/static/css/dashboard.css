@@ -1,0 +1,34 @@
+/* ============================================================
+   📦 VIGÍA GET – CSS PRINCIPAL
+   Este archivo solo importa los módulos.
+============================================================ */
+
+/* 🧱 BASE / THEME */
+@import url('base.css');
+
+/* 🧩 LAYOUT */
+@import url('layout.css');
+
+/* 📦 CARDS */
+@import url('cards.css');
+
+/* 🎥 CÁMARA & SNAPSHOT */
+@import url('camera.css');
+
+/* 🎬 MODAL CINE */
+@import url('cine.css');
+
+/* 🟡 SERVICE PILLS */
+@import url('services.css');
+
+/* 📑 TABLAS */
+@import url('tables.css');
+
+/* 🚜 INFO PALA */
+@import url('shovel.css');
+
+/* 🔄 PANEL SSR */
+@import url('ssr_panel.css');
+
+/* 🚨 MODAL INCIDENTE PREMIUM */
+@import url('modal_incidente.css');

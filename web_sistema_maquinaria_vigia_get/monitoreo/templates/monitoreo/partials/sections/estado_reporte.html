@@ -1,0 +1,18 @@
+<div class="card card-outline card-warning mt-3">
+    <div class="card-header">
+        <h3 class="card-title"><i class="fas fa-clipboard-check mr-1"></i> Estado del Último Reporte</h3>
+    </div>
+
+    <div class="card-body">
+        <p><strong>Estado:</strong> <span id="estado-reporte">{{ last_report.estado }}</span></p>
+        <p><strong>Severidad:</strong> <span id="sev-reporte">{{ last_report.severidad }}</span></p>
+        <p><strong>Tiempo Proceso:</strong> <span id="tiempo-proceso">{{ last_report.tiempo_proceso_ms }} ms</span></p>
+
+        <p><strong>Detecciones:</strong></p>
+        <ul>
+            <li>Local: <span id="det-local">{{ last_report.detecciones_local }}</span></li>
+            <li>Nube: <span id="det-nube">{{ last_report.detecciones_nube }}</span></li>
+            <li>Esperado: <span id="det-esperado">{{ last_report.esperado }}</span></li>
+        </ul>
+    </div>
+</div>

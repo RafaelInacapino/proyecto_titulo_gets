@@ -1,0 +1,9 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5002,
+
+  "video_feed_url": "http://localhost:5001/video_feed",
+
+  "canvas_size": [512, 512],
+  "quality": "medium"
+}

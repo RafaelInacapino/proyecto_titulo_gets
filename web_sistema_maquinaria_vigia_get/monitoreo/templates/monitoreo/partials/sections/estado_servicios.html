@@ -1,0 +1,19 @@
+{% load monitoreo_tags %}
+
+<div class="card card-outline card-info mt-3">
+    <div class="card-header">
+        <h3 class="card-title"><i class="fas fa-server mr-1"></i> Estado de Servicios</h3>
+    </div>
+
+    <div class="card-body">
+        {% for svc in services %}
+        <div class="service-pill">
+            <div>
+                <i class="fas {{ svc.status|icon_class }} mr-2"></i>
+                {{ svc.name }}
+            </div>
+            <span class="badge {{ svc.status|badge_class }}">{{ svc.status }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</div>

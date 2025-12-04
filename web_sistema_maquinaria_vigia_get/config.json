@@ -1,0 +1,38 @@
+{
+  "mongo_uri": "mongodb://127.0.0.1:27017",
+  "mongo_db": "vigia_gets",
+
+  "datos_maquinaria": {
+    "marca_maquinaria": "",
+    "modelo_maquinaria": "",
+    "marca_pala": "",
+    "modelo_pala": "",
+    "cantidad_dientes_pala": 6,
+    "maquinista_responsable": "",
+    "ubicacion": "R"
+  },
+  "ssr_service": {
+      "host": "http://127.0.0.1",
+      "port": 5008,
+      "resume_route": "/resume",
+      "status_route": "/api/v1/status"
+  },
+  "camera": {
+    "host": "http://127.0.0.1:5001",
+    "stream_route": "/video_feed"
+  },
+
+  "storage_local": {
+    "media_url": "/media/"
+  },
+
+  "storage_nube": {
+    "upload_endpoint": "https://miwebnube.com/api/upload",
+    "token": "AQUI-TU-TOKEN"
+  },
+
+  "alert_service": {
+    "endpoint": "http://127.0.0.1:6000/alertar",
+    "pause_endpoint": "http://127.0.0.1:6000/pausar"
+  }
+}

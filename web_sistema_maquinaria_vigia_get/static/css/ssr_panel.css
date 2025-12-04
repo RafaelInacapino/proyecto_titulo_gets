@@ -1,0 +1,18 @@
+.vigia-ssr-alert {
+    border-radius: 12px;
+    border: 1px solid rgba(245,179,1,0.6);
+    background: rgba(245,179,1,0.18);
+    padding: 1.2rem;
+    color: #fff;
+    box-shadow: var(--shadow-elevated);
+    text-align: center;
+}
+
+.vigia-ssr-btn {
+    padding: .8rem;
+    font-size: 1.1rem;
+    border-radius: 999px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: .5rem;
+}

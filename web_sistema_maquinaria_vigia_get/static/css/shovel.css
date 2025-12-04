@@ -1,0 +1,10 @@
+.shovel-label {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+
+.shovel-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+}

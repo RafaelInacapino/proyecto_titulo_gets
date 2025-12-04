@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #004c70;
+    --color-primary-light: #0a6f9f;
+    --color-secondary: #f5b301;
+
+    --color-dark: #1a1d21;
+    --color-dark-light: #2a2f35;
+
+    --color-light: #e9ecef;
+    --color-muted: #6c757d;
+
+    --radius-base: 10px;
+
+    --shadow-elevated: 0 4px 12px rgba(0,0,0,0.25);
+    --shadow-hover: 0 4px 16px rgba(0,0,0,0.35);
+
+    --transition-fast: .25s;
+}
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: .2px;
+}

@@ -1,0 +1,59 @@
+/* ============================================================
+   MODAL CINE — versión estable compatible con AdminLTE/Bootstrap
+============================================================ */
+
+/* Oculto al inicio */
+.cine-modal {
+    display: none !important;   /* 🔒 Nada lo puede sobreescribir */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 15000;
+
+    /* Flex SOLO será activado por JS */
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Al activarse desde JS usamos esta clase */
+.cine-modal.show {
+    display: flex !important;   /* 🔥 Esto sí lo muestra y centra */
+}
+
+/* Contenido */
+.cine-content {
+    max-width: 90%;
+    max-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen dentro del modal */
+.cine-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Botón cerrar */
+.cine-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+
+    z-index: 16000;
+}

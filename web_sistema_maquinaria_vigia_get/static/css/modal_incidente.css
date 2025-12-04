@@ -1,0 +1,94 @@
+/* SweetAlert debe quedar siempre arriba del modal */
+.swal2-container {
+    z-index: 30000 !important;
+}
+
+
+.vigia-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 20000 !important;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.vigia-modal-content {
+    background: var(--color-dark-light);
+    padding: 1.8rem;
+    width: 92%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-elevated);
+
+    animation: modalFade .35s ease;
+    display: flex;
+    flex-direction: row;
+    gap: 1.8rem;
+
+    z-index: 20001 !important;
+}
+
+@keyframes modalFade {
+    from { opacity: 0; transform: scale(.95); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.vigia-modal-img {
+    width: 45%;
+    max-width: 360px;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #000;
+}
+
+.vigia-modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vigia-modal-header {
+    border-bottom: 2px solid var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.vigia-modal-header h2 {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.vigia-modal-info p {
+    margin: .3rem 0;
+    font-size: 1rem;
+}
+
+.vigia-alarm-btn {
+    width: 100%;
+    padding: .9rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background: #dc3545;
+    border: none;
+    font-weight: bold;
+}
+.vigia-alarm-btn:hover {
+    background: #ff2d41;
+}
+
+@media(max-width: 820px){
+    .vigia-modal-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vigia-modal-img {
+        width: 100%;
+        max-height: 280px;
+    }
+}

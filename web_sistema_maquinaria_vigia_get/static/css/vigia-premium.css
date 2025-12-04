@@ -1,0 +1,327 @@
+/* ===========================
+   ESTILO PREMIUM VIGÍA GET
+   =========================== */
+
+/* ---------------------------
+   Variables corporativas
+   --------------------------- */
+:root {
+    --color-primary: #004c70;          /* Azul petróleo */
+    --color-primary-light: #0a6f9f;
+    --color-secondary: #f5b301;        /* Amarillo minería */
+    --color-dark: #1a1d21;
+    --color-dark-light: #2a2f35;
+    --color-light: #e9ecef;
+    --color-muted: #6c757d;
+    --radius-base: 10px;
+    --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.35);
+    --transition-fast: 0.25s;
+}
+
+/* ---------------------------
+   Fondo general
+   --------------------------- */
+body {
+    background-color: var(--color-dark);
+    color: #fff;
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.2px;
+}
+
+/* ---------------------------
+   Navbar top (layout-top-nav)
+   --------------------------- */
+.main-header.navbar {
+    background-color: var(--color-dark-light) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand .brand-text {
+    color: var(--color-secondary);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.main-header .nav-link {
+    color: var(--color-light) !important;
+}
+
+/* ---------------------------
+   Content wrapper
+   --------------------------- */
+.content-wrapper {
+    background-color: var(--color-dark);
+}
+
+.content-wrapper .content {
+    padding-top: 1rem;
+}
+
+/* ---------------------------
+   Cards premium
+   --------------------------- */
+.card {
+    border-radius: var(--radius-base);
+    background-color: var(--color-dark-light);
+    color: var(--color-light);
+    border: none;
+    box-shadow: var(--shadow-elevated);
+    transition: var(--transition-fast);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* ---------------------------
+   Cámara & Snapshot
+   --------------------------- */
+.camera-frame {
+    background-color: #000;
+    border-radius: var(--radius-base);
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-frame img,
+.camera-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.snapshot-img {
+    border-radius: var(--radius-base);
+    border: 2px solid var(--color-primary-light);
+    width: 100%;
+    object-fit: cover;
+    max-height: 260px;
+}
+
+/* ---------------------------
+   Pills de servicios
+   --------------------------- */
+.service-pill {
+    background: var(--color-dark);
+    border-radius: 999px;
+    padding: .6rem .9rem;
+    margin-bottom: .5rem;
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.service-pill:hover {
+    background: var(--color-dark-light);
+    box-shadow: var(--shadow-elevated);
+}
+
+/* ---------------------------
+   Badges
+   --------------------------- */
+.badge-success {
+    background-color: #28a745 !important;
+}
+
+.badge-warning {
+    background-color: #ffc107 !important;
+    color: #1a1a1a !important;
+}
+
+.badge-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge-info {
+    background-color: #17a2b8 !important;
+}
+
+/* ---------------------------
+   Tabla logs
+   --------------------------- */
+.table-logs tbody tr {
+    transition: var(--transition-fast);
+}
+
+.table-logs tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ---------------------------
+   Pala - Labels
+   --------------------------- */
+.shovel-label {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    font-weight: bold;
+}
+
+.shovel-value {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+/* ---------------------------
+   Footer
+   --------------------------- */
+.main-footer {
+    background-color: var(--color-dark-light) !important;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: var(--color-muted);
+}
+
+/* ---------------------------
+   Modal de alerta
+   --------------------------- */
+#alertaIncidente .modal-content {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+}
+
+#alertaIncidente .modal-title {
+    letter-spacing: 0.5px;
+}
+
+#alertaIncidente img {
+    max-height: 260px;
+    object-fit: cover;
+}
+
+/* Botón Detener Alarma */
+#btnDetenerAlarma {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* ---------------------------
+   Utilidades
+   --------------------------- */
+.text-muted {
+    color: var(--color-muted) !important;
+}
+/* ---- Cámara 512x512 (manteniendo diseño discreto) ---- */
+.camera-frame-512 {
+    width: 100%;
+    max-width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 8px; /* mantiene bordes redondeados */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-frame-512 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* muestra la imagen completa */
+}
+
+/* ---- Snapshot 512x512 (mantiene diseño discreto) ---- */
+.snapshot-frame-512 {
+    width: 100%;
+    max-width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 8px; /* bordes redondeados */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snapshot-frame-512 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ---------- Cámara 512x512 ---------- */
+.camera-frame-512 {
+    width: 100%;
+    max-width: 512px;
+    height: 512px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer; /* indica que se puede agrandar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera-frame-512 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* <-- SE ESTIRA, OCUPA TODO, SIN BORDES */
+}
+
+
+
+/* ---------- MODAL CINE (pantalla ampliada) ---------- */
+.cine-modal {
+    display: none;              /* se muestra con JS */
+    position: fixed;
+    z-index: 5000;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.9); /* oscurecido elegante */
+}
+
+/* Contenido centrado */
+.cine-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 900px; /* tamaño cine */
+}
+
+.cine-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Botón cerrar */
+.cine-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cine-close:hover {
+    color: #ff4444;
+}

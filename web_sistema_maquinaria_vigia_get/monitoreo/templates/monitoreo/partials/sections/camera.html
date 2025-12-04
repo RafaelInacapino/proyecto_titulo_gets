@@ -1,0 +1,22 @@
+<div class="card card-primary card-outline mt-3">
+    <div class="card-header">
+        <h3 class="card-title">
+            <i class="fas fa-video mr-1"></i> Monitoreo Cámara
+        </h3>
+        <span class="badge badge-success float-right">Online</span>
+    </div>
+
+    <div class="card-body">
+        <div class="camera-frame-512" id="cameraThumbnail" style="cursor:pointer;">
+            <img id="camera-img" src="{{ camera_stream_url }}" alt="Stream cámara">
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cine de Cámara -->
+<div id="cineModal" class="cine-modal">
+    <span id="cerrarCine" class="cine-close">&times;</span>
+    <div class="cine-content">
+        <img id="cineImage" src="{{ camera_stream_url }}" alt="Vista ampliada">
+    </div>
+</div>

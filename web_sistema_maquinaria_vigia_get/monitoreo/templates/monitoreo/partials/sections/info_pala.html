@@ -1,0 +1,50 @@
+<div class="card card-outline card-warning mt-3">
+    <div class="card-header">
+        <h3 class="card-title"><i class="fas fa-hard-hat mr-1"></i> Información de la Pala</h3>
+    </div>
+
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-6">
+                <p class="shovel-label">Maquinaria</p>
+                <p id="maq-completa" class="shovel-value">
+                    {{ shovel.marca_maquinaria }} {{ shovel.modelo_maquinaria }}
+                </p>
+            </div>
+
+            <div class="col-6">
+                <p class="shovel-label">Pala</p>
+                <p id="pala-completa" class="shovel-value">
+                    {{ shovel.marca_pala }} {{ shovel.modelo_pala }}
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-6">
+                <p class="shovel-label">Dientes</p>
+                <p id="pala-dientes" class="shovel-value">
+                    {{ shovel.cantidad_dientes }}
+                </p>
+            </div>
+
+            <div class="col-6">
+                <p class="shovel-label">Maquinista</p>
+                <p id="pala-maquinista" class="shovel-value">
+                    {{ shovel.maquinista }}
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-12">
+                <p class="shovel-label">Ubicación</p>
+                <p id="pala-ubicacion" class="shovel-value">
+                    {{ shovel.ubicacion }}
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>

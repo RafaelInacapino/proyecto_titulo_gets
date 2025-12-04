@@ -1,0 +1,8 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5004,
+  "api_url": "http://localhost:9001",
+  "roboflow_api_key": "",
+  "workspace_name": "new-workspace-48chd",
+  "workflow_id": "detect-count-and-visualize-2"
+}

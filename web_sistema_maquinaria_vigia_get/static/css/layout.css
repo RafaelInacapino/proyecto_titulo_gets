@@ -1,0 +1,27 @@
+.main-header.navbar {
+    background-color: var(--color-dark-light) !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-brand .brand-text {
+    color: var(--color-secondary);
+    font-weight: 700;
+}
+
+.main-header .nav-link {
+    color: var(--color-light) !important;
+}
+
+.content-wrapper {
+    background-color: var(--color-dark);
+}
+
+.content-wrapper .content {
+    padding-top: 1rem;
+}
+
+.main-footer {
+    background-color: var(--color-dark-light) !important;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: var(--color-muted);
+}

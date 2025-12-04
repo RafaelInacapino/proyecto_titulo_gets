@@ -1,0 +1,25 @@
+<div class="card card-outline card-secondary mt-3">
+    <div class="card-header">
+        <h3 class="card-title"><i class="far fa-image mr-1"></i> Última Snapshot</h3>
+    </div>
+
+    <div class="card-body">
+        <div class="snapshot-frame-512" id="snapshotThumbnail" style="cursor:pointer;">
+            <img id="snapshot-img" src="{{ last_snapshot_url }}" alt="Última snapshot">
+        </div>
+
+        <div class="mt-3">
+            <p><strong>Fecha/Hora:</strong> <span id="snap-fecha">{{ last_report.timestamp_local }}</span></p>
+            <p><strong>ID Reporte:</strong> <span id="snap-id">{{ last_report.id_reporte }}</span></p>
+            <p><strong>Pala:</strong> <span id="snap-pala">{{ last_report.idShovel }}</span></p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cine Snapshot -->
+<div id="cineSnapshot" class="cine-modal">
+    <span id="cerrarSnapshot" class="cine-close">&times;</span>
+    <div class="cine-content">
+        <img id="cineSnapshotImage" src="{{ last_snapshot_url }}" alt="Snapshot ampliada">
+    </div>
+</div>

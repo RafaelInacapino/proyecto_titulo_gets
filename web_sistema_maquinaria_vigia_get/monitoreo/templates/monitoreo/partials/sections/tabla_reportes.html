@@ -1,0 +1,50 @@
+<div class="card card-outline card-primary">
+    <div class="card-header">
+        <h3 class="card-title"><i class="fas fa-history mr-1"></i> Últimos 10 Reportes</h3>
+    </div>
+
+    <div class="card-body table-responsive p-0">
+        <table class="table table-hover table-sm">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fecha/Hora</th>
+                    <th>ID Reporte</th>
+                    <th>Pala</th>
+                    <th>Estado</th>
+                    <th>Severidad</th>
+                    <th>Local/Nube/Esp</th>
+                    <th>Faltantes</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabla-reportes-body">
+                {% for rep in last_reports %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ rep.timestamp_local }}</td>
+                    <td>{{ rep.id_reporte }}</td>
+                    <td>{{ rep.idShovel }}</td>
+
+                    <td>
+                        {% if rep.estado == "incidente" %}
+                            <span class="badge badge-danger">INCIDENTE</span>
+                        {% elif rep.estado == "sin_novedades" %}
+                            <span class="badge badge-success">SIN NOVEDADES</span>
+                        {% else %}
+                            <span class="badge badge-secondary">{{ rep.estado }}</span>
+                        {% endif %}
+                    </td>
+
+                    <td>{{ rep.severidad }}</td>
+
+                    <td>{{ rep.detecciones_local }}/{{ rep.detecciones_nube }}/{{ rep.esperado }}</td>
+
+                    <td>{{ rep.faltantes_local }}/{{ rep.faltantes_nube }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>

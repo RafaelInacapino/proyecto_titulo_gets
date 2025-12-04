@@ -1,0 +1,52 @@
+{
+  "host": "0.0.0.0",
+  "service_port": 5008,
+
+  "cycle_sleep_seconds": 2,
+  "max_retries_per_step": 3,
+  "retry_delay_seconds": 2,
+
+  "default_expected_teeth": 6,
+  "min_consecutive_missing_cycles": 3,
+  "ciclos_para_incidente": 0,
+  "max_missing_tolerance": 0,
+  "max_reports_per_incident": 3,
+
+  "idShovel": 22,
+  "idUser": 1,
+  "idStatusIncident": 1,
+
+  "descripcion_sin_novedad": "Sin novedades",
+
+  "datos_maquinaria": {
+    "marca_maquinaria": "",
+    "modelo_maquinaria": "",
+    "marca_pala": "",
+    "modelo_pala": "",
+    "cantidad_dientes_pala": 10,
+    "maquinista_responsable": "",
+    "ubicacion": ""
+  },
+
+  "naming": {
+    "timestamp_format": "%Y%m%d%H%M%S",
+    "default_extension": ".jpg"
+  },
+
+  "services": {
+    "servicio_transmision_camara": "http://localhost:5001",
+    "servicio_transmision_camara_rutas": ["/video_feed", "/status"],
+    "servicio_capturador_imagen": "http://localhost:5002",
+    "servicio_capturador_imagen_rutas": ["/snapshot"],
+    "servicio_procesador_imagen_modelo_local": "http://localhost:5003",
+    "servicio_procesador_imagen_modelo_local_rutas": ["/procesar"],
+    "servicio_procesador_imagen_modelo_nube": "http://localhost:5004",
+    "servicio_procesador_imagen_modelo_nube_rutas": ["/procesar"],
+    "servicio_almacenador_imagen_local": "http://localhost:5005",
+    "servicio_almacenador_imagen_local_rutas": ["/api/v1/reportes", "/api/v1/status"],
+    "servicio_almacenador_imagen_nube": "http://localhost:5006",
+    "servicio_almacenador_imagen_nube_rutas": ["/api/v1/reportes", "/api/v1/status"],
+    "servicio_alertador_incidente": "http://localhost:5007",
+    "servicio_alertador_incidente_rutas": ["/api/v1/alerta", "/api/v1/status"]
+  }
+}
